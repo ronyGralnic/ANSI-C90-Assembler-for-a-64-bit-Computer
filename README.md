@@ -8,9 +8,10 @@ It includes a macro preprocessor, symbol table management, error handling, and f
 
 This project emphasizes **system-level programming**, **low-level architecture understanding**, and **clean modular C design**.
 
----
 
-## 📌 Overview
+
+📌 Overview
+---
 
 The goal of this project was to design and implement an **assembler** for a custom CPU architecture.
 
@@ -28,9 +29,6 @@ gcc -ansi -pedantic -Wall
 
 ```
 
-
-
-
 The system simulates a computer with:
 
 - 14-bit words
@@ -38,100 +36,102 @@ The system simulates a computer with:
 - 8 general-purpose registers
 - Custom instruction set
 - Multiple addressing modes
-```
-```
----
 
-## ✨ Key Features
 
-🧠 Two-pass assembler architecture
 
-🧩 Macro preprocessor (macro expansion stage)
+✨ Key Features
+-
 
-🗂️ Symbol table with extern & entry support
+- 🧠 Two-pass assembler architecture
 
-⚙️ Full instruction encoding to 14-bit machine words
+- 🧩 Macro preprocessor (macro expansion stage)
 
-🧮 Custom base-4 encrypted output format
+- 🗂️ Symbol table with extern & entry support
 
-📚 Support for directives: .data, .string, .extern, .entry, .define
+- ⚙️ Full instruction encoding to 14-bit machine words
 
-🧱 Support for arrays and index addressing
+- 🧮 Custom base-4 encrypted output format
 
-🚦 Extensive syntax & semantic error detection
+- 📚 Support for directives: `.data`, `.string`, `.extern`, `.entry`, `.define`.
 
----
+- 🧱 Support for arrays and index addressing
 
- ## 📄 Generates:
+- 🚦 Extensive syntax & semantic error detection
 
-Object file (.ob)
+- 🧼 Clean modular design (separated by responsibility).
 
-Entries file (.ent)
+📄Output Files:
+ -
 
-Externals file (.ext)
+- Object file `(.ob)`
 
-🧼 Clean modular design (separated by responsibility)
+- Entries file `(.ent)`
 
----
-## 🏗️ Architecture
+- Externals file `(.ext)`
 
-The assembler is built in clear processing stages:
 
-Pre-Assembler
 
-Expands macros
 
-Produces an extended source file
+🏗️ Architecture
+-
+1. The assembler is built in clear processing stages:
 
-First Pass
+- **Pre-Assembler**
 
-Builds the symbol table
+- Expands macros
 
-Counts instruction & data memory
+- Produces an extended source file
 
-Validates syntax structure
+2. **First Pass***
 
-Second Pass
+- Builds the symbol table
 
-Encodes machine instructions
+- Counts instruction & data memory
 
-Resolves labels
+- Validates syntax structure
 
-Handles externals & entries
+3. **Second Pass**
 
-Output Generation
+- Encodes machine instructions
 
-Encodes memory image
+- Resolves labels
 
-Writes output files
+- Handles externals & entries
 
-The system uses structured modules for:
+4. **Output Generation**
 
-Parsing
+- Encodes memory image
 
-Symbol management
+- Writes output files
 
-Instruction encoding
+- The system uses structured modules for:
 
-Error handling
+- Parsing
 
-File generation
+- Symbol management
 
----
+- Instruction encoding
 
-## 🛠️ Tech Stack
+- Error handling
 
-Language: ANSI C
-
-Compiler: GCC
-
-Build System: Makefile
-
-Environment: Linux (Ubuntu compatible)
+- File generation
 
 ---
 
-## ⚙️ Compilation
+🛠️ Tech Stack
+-
+- Language: ANSI C
+
+- Compiler: GCC
+
+- Build System: Makefile
+
+- Environment: Linux (Ubuntu compatible)
+
+
+
+⚙️ Compilation
+-
 ```
 make
 ```
@@ -143,38 +143,27 @@ gcc -ansi -pedantic -Wall *.c -o assembler
 ```
 
 
-### ▶️ Usage
+▶️ Usage
 ```bash
 ./assembler file1.as file2.as
 ```
 
 The assembler will generate output files for each valid source file.
----
 
-## 📄 Output Files
+🧪 Example Capabilities
+-
+- The assembler supports:
 
-file.ob – Encoded machine code
+- Immediate, direct, index, and register addressing
 
-file.ent – Entry symbols
+- Macro definitions and expansion
 
-file.ext – External symbol references
+- Arrays and constants
 
+- External labels and multi-file linking preparation
 
+- Detailed error reports (line-based)
 
-## 🧪 Example Capabilities
-
-The assembler supports:
-
-Immediate, direct, index, and register addressing
-
-Macro definitions and expansion
-
-Arrays and constants
-
-External labels and multi-file linking preparation
-
-Detailed error reports (line-based)
-
-## 📜 License
-
+📜 License
+-
 This project was developed for academic and educational purposes.
