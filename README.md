@@ -59,6 +59,7 @@ The system simulates a computer with:
 🧱 Support for arrays and index addressing
 
 🚦 Extensive syntax & semantic error detection
+
 ---
 
  ## 📄 Generates:
@@ -157,7 +158,8 @@ file.ob – Encoded machine code
 file.ent – Entry symbols
 
 file.ext – External symbol references
----
+
+
 
 ## 🧪 Example Capabilities
 
