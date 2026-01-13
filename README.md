@@ -29,7 +29,8 @@ gcc -ansi -pedantic -Wall
 ```
 
 
----
+
+
 The system simulates a computer with:
 
 - 14-bit words
@@ -38,7 +39,8 @@ The system simulates a computer with:
 - Custom instruction set
 - Multiple addressing modes
 ```
-
+```
+---
 
 ## ✨ Key Features
 
@@ -57,9 +59,9 @@ The system simulates a computer with:
 🧱 Support for arrays and index addressing
 
 🚦 Extensive syntax & semantic error detection
-```
+---
 
- 📄 Generates:
+ ## 📄 Generates:
 
 Object file (.ob)
 
@@ -68,8 +70,8 @@ Entries file (.ent)
 Externals file (.ext)
 
 🧼 Clean modular design (separated by responsibility)
-```
 
+---
 ## 🏗️ Architecture
 
 The assembler is built in clear processing stages:
@@ -114,7 +116,7 @@ Error handling
 
 File generation
 
-```
+---
 
 ## 🛠️ Tech Stack
 
@@ -126,9 +128,9 @@ Build System: Makefile
 
 Environment: Linux (Ubuntu compatible)
 
-```
+---
 
-⚙️ Compilation
+## ⚙️ Compilation
 ```
 make
 ```
@@ -139,23 +141,25 @@ Or manually:
 gcc -ansi -pedantic -Wall *.c -o assembler
 ```
 
-```
-▶️ Usage
-./assembler file1.as file2.as
 
+### ▶️ Usage
+```bash
+./assembler file1.as file2.as
+```
 
 The assembler will generate output files for each valid source file.
-```
-📄 Output Files
+---
+
+## 📄 Output Files
 
 file.ob – Encoded machine code
 
 file.ent – Entry symbols
 
 file.ext – External symbol references
-```
+---
 
-🧪 Example Capabilities
+## 🧪 Example Capabilities
 
 The assembler supports:
 
@@ -168,7 +172,7 @@ Arrays and constants
 External labels and multi-file linking preparation
 
 Detailed error reports (line-based)
-```
-📜 License
+
+## 📜 License
 
 This project was developed for academic and educational purposes.
