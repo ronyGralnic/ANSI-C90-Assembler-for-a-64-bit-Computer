@@ -39,6 +39,7 @@ The system simulates a computer with:
 Custom instruction set
 
 Multiple addressing modes
+```
 
 ✨ Key Features
 
@@ -57,6 +58,7 @@ Multiple addressing modes
 🧱 Support for arrays and index addressing
 
 🚦 Extensive syntax & semantic error detection
+```
 
 📄 Generates:
 
@@ -67,6 +69,7 @@ Entries file (.ent)
 Externals file (.ext)
 
 🧼 Clean modular design (separated by responsibility)
+```
 
 🏗️ Architecture
 
@@ -112,6 +115,8 @@ Error handling
 
 File generation
 
+```
+
 🛠️ Tech Stack
 
 Language: ANSI C
@@ -122,20 +127,26 @@ Build System: Makefile
 
 Environment: Linux (Ubuntu compatible)
 
+```
+
 ⚙️ Compilation
+```
 make
+```
 
 
 Or manually:
-
+```
 gcc -ansi -pedantic -Wall *.c -o assembler
+```
 
+```
 ▶️ Usage
 ./assembler file1.as file2.as
 
 
 The assembler will generate output files for each valid source file.
-
+```
 📄 Output Files
 
 file.ob – Encoded machine code
@@ -143,6 +154,7 @@ file.ob – Encoded machine code
 file.ent – Entry symbols
 
 file.ext – External symbol references
+```
 
 🧪 Example Capabilities
 
@@ -157,7 +169,7 @@ Arrays and constants
 External labels and multi-file linking preparation
 
 Detailed error reports (line-based)
-
+```
 📜 License
 
 This project was developed for academic and educational purposes.
