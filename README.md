@@ -1,6 +1,7 @@
 # ANSI Assembler 🧩  
 **A full two-pass assembler written in ANSI C for a custom 14-bit virtual machine**
 
+---
 
 The assembler translates a custom-designed assembly language into machine code for a simulated 14-bit computer.  
 It includes a macro preprocessor, symbol table management, error handling, and full instruction encoding.
@@ -27,21 +28,19 @@ gcc -ansi -pedantic -Wall
 
 ```
 
+
 ---
 The system simulates a computer with:
 
-14-bit words
-
-4096 memory cells
-
-8 general-purpose registers
-
-Custom instruction set
-
-Multiple addressing modes
+- 14-bit words
+- 4096 memory cells
+- 8 general-purpose registers
+- Custom instruction set
+- Multiple addressing modes
 ```
 
-✨ Key Features
+
+## ✨ Key Features
 
 🧠 Two-pass assembler architecture
 
@@ -60,7 +59,7 @@ Multiple addressing modes
 🚦 Extensive syntax & semantic error detection
 ```
 
-📄 Generates:
+ 📄 Generates:
 
 Object file (.ob)
 
@@ -71,7 +70,7 @@ Externals file (.ext)
 🧼 Clean modular design (separated by responsibility)
 ```
 
-🏗️ Architecture
+## 🏗️ Architecture
 
 The assembler is built in clear processing stages:
 
@@ -117,7 +116,7 @@ File generation
 
 ```
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 Language: ANSI C
 
